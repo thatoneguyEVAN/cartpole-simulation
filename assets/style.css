@@ -1,8 +1,48 @@
-html, body {
-    margin: 0;
-    padding: 0;
-  }
-  canvas {
-    display: block;
-  }
-  
+html{
+    font-size: 10px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+ /* Header Things */
+.header{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header #title{
+    font-size: 3rem;
+}
+
+.header #subtitle{
+    font-size: 1.5rem;
+}
+
+
+/* sliders */
+#simulation_controls{
+    display:flex;
+}
+
+.slider_container{
+    border:1px solid rgb(189, 189, 189);
+    padding:5px;
+}
+
+.slider_header{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.slider_header .slider_value{
+    margin-left: 20px;
+}

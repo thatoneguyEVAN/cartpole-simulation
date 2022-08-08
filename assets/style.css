@@ -1,3 +1,12 @@
+:root{
+    --kp_color: rgb(55, 9, 38);
+    --ki_color: rgb(52, 89, 149);
+    --kd_color: rgb(228, 0, 102);
+    --teal: rgb(3, 206, 164);
+    --error_color: rgb(251, 77, 61);
+
+}
+
 html{
     font-size: 10px;
 }
@@ -33,8 +42,21 @@ body{
 }
 
 .slider_container{
+    font-size: 2rem;
+    color: white;
     border:1px solid rgb(189, 189, 189);
     padding:5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#simulation_controls .slider_container:not(:last-child){
+    margin-right: 1rem;;
+}
+
+.slider_group{
+    display:flex;
 }
 
 .slider_header{
@@ -44,5 +66,52 @@ body{
 }
 
 .slider_header .slider_value{
-    margin-left: 20px;
+    margin-left: 2rem;
+}
+
+
+/* equations */
+
+.kp_color{
+    background:var(--kp_color);
+    color:white;
+}
+
+.kp_color_text{
+    color:var(--kp_color);
+}
+
+.ki_color{
+    background:var(--ki_color);
+    color:white;
+}
+
+.kd_color{
+    background:var(--kd_color);
+    color:white;
+}
+
+.error_color{
+    background: var(--error_color);
+    color:white;
+}
+
+.equation{
+    margin:1rem 0 1rem 0;
+    padding:1rem;
+    display:flex;
+    font-size: 2rem;
+    background:#d8d8d8;
+}
+
+.equation_section{
+    display:flex;
+}
+
+.value{
+    padding:1rem;
+}
+
+.master_equation{
+    font-size:2rem;
 }

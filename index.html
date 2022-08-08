@@ -21,33 +21,65 @@
     <div id="simulation"></div>
     <div id="simulation_controls">
 
-      <div class="slider_container">
-        <div class="slider_header">
-          <div class="slider_label">Kp</div>
-          <div id="kp_slider_value" class="slider_value"></div>
+      <div class="slider_container kp_color">
+        Proportional (Kp)
+        <div class="slider_group">
+          <input type="range" min="0" max="0.01" value="0.005" step="0.001" lass="slider" id="kp_slider" class="form-range">
         </div>
-        <input type="range" min="0" max="0.01" value="0.005" step="0.001" lass="slider" id="kp_slider" class="form-range">
       </div>
-
-      <div class="slider_container">
-        <div class="slider_header">
-          <div class="slider_label">Ki</div>
-          <div id="ki_slider_value" class="slider_value"></div>
+      <div class="slider_container ki_color">
+        Integral (Ki)
+        <div class="slider_group">
+          <input type="range" min="0" max="0.01" value="0.005" step="0.001" lass="slider" id="ki_slider" class="form-range">
         </div>
-        <input type="range" min="0" max="0.01" value="0.005" step="0.001" lass="slider" id="ki_slider" class="form-range">
       </div>
-
-      <div class="slider_container">
-        <div class="slider_header">
-          <div class="slider_label">Kd</div>
-          <div id="kd_slider_value" class="slider_value"></div>
+      <div class="slider_container kd_color">
+        Derivative (Kd)
+        <div class="slider_group">
+          <input type="range" min="0" max="0.01" value="0.005" step="0.001" lass="slider" id="kd_slider" class="form-range">
         </div>
-        <input type="range" min="0" max="0.01" value="0.005" step="0.001" lass="slider" id="kd_slider" class="form-range">
       </div>
-
     </div>
+
+    <div class="equation">
+
+      <div class="equation_section">
+        <div class="value kp_value kp_color"></div>
+        <div class="equation_symbol">*</div>
+        <div class="value error error_color">23.42</div>
+      </div>
+      <div class="equation_symbol">+</div>
+      <div class="equation_section">
+        <div class="value ki_value ki_color"></div>
+        <div class="equation_symbol">*</div>
+        <div class="value error">23.43</div>
+      </div>
+      <div class="equation_symbol">+</div>
+      <div class="equation_section">
+        <div class="value kd_value kd_color"></div>
+        <div class="equation_symbol">*</div>
+        <div class="value error">343.34</div>
+      </div>
+    </div>
+
+    <div class="master_equation">
+      $$
+      \require{color}
+      \definecolor{kp_color}{RGB}{55, 9, 38}
+      \definecolor{ki_color}{RGB}{52, 89, 149}
+      \definecolor{kd_color}{RGB}{228, 0, 102}
+      \definecolor{error_color}{RGB}{251, 77, 61}
+
+      u(t) = \textcolor{kp_color}{K_p}\textcolor{error_color}{e(t)}+\textcolor{ki_color}{K_i}\int_0^t\textcolor{error_color}{e(t)}dt +\textcolor{kd_color}{K_d}\frac{de}{dt}
+
+      $$
+    </div>
+    
+
+    
     <script src="assets/matter.js"></script> <!-- Matter.js -->
     <script src="cartpole.js"></script> <!-- Simulation-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="assets/MathJax/latest.js"></script>
   </body>
 </html>

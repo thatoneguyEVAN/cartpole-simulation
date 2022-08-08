@@ -19,61 +19,87 @@
     </div>
     
     <div id="simulation"></div>
-    <div id="simulation_controls">
+    <div class="equations">
+      <div id="simulation_controls">
 
-      <div class="slider_container kp_color">
-        Proportional (Kp)
-        <div class="slider_group">
-          <input type="range" min="0" max="0.01" value="0.005" step="0.001" lass="slider" id="kp_slider" class="form-range">
+        <div class="slider_container kp_color light_text">
+          Proportional (Kp)
+          <div class="slider_group">
+            <input type="range" min="0" max="0.01" value="0.005" step="0.001" lass="slider" id="kp_slider" class="form-range">
+          </div>
+        </div>
+        <div class="slider_container ki_color light_text">
+          Integral (Ki)
+          <div class="slider_group">
+            <input type="range" min="0" max="0.01" value="0.005" step="0.001" lass="slider" id="ki_slider" class="form-range">
+          </div>
+        </div>
+        <div class="slider_container kd_color light_text">
+          Derivative (Kd)
+          <div class="slider_group">
+            <input type="range" min="0" max="0.01" value="0.005" step="0.001" lass="slider" id="kd_slider" class="form-range">
+          </div>
+        </div>
+        <div class="slider_container dt_color light_text">
+          Time Step (dt)
+          <div class="slider_group">
+            <input type="range" min="0" max="0.01" value="0.005" step="0.001" lass="slider" id="kd_slider" class="form-range">
+          </div>
         </div>
       </div>
-      <div class="slider_container ki_color">
-        Integral (Ki)
-        <div class="slider_group">
-          <input type="range" min="0" max="0.01" value="0.005" step="0.001" lass="slider" id="ki_slider" class="form-range">
-        </div>
+
+      <div class="master equation">
+        $$
+        \require{color}
+        \definecolor{kp_color}{RGB}{200, 0, 0}
+        \definecolor{ki_color}{RGB}{0, 180,0}
+        \definecolor{kd_color}{RGB}{0, 0, 200}
+        \definecolor{int_color}{RGB}{8, 181, 200}
+        \definecolor{div_color}{RGB}{200, 22, 194}
+        \definecolor{dt_color}{RGB}{233, 152, 22}
+        \definecolor{error_color}{RGB}{132, 0, 255}
+        
+        u(t) = 
+        
+        \textcolor{kp_color}{K_p}
+        \textcolor{error_color}{e(t)}+
+        \textcolor{ki_color}{K_i}
+        \textcolor{int_color}{\int_0^te(t)}
+        \textcolor{dt_color}{dt}
+  
+        +
+  
+        \textcolor{kd_color}{K_d}
+        \frac{
+          \textcolor{div_color}{de}}{
+          \textcolor{dt_color}{dt}
+        }
+  
+        $$
       </div>
-      <div class="slider_container kd_color">
-        Derivative (Kd)
-        <div class="slider_group">
-          <input type="range" min="0" max="0.01" value="0.005" step="0.001" lass="slider" id="kd_slider" class="form-range">
+      <div class="equation">
+        <div class="equation_section">
+          <div class="value kp_value kp_color light_text"></div>
+          <div class="equation_symbol">$$*$$</div>
+          <div class="value error error_color light_text">23.42</div>
+        </div>
+        <div class="equation_symbol">$$+$$</div>
+        <div class="equation_section">
+          <div class="value ki_value ki_color light_text"></div>
+          <div class="equation_symbol">$$*$$</div>
+          <div class="value int int_color light_text">23.43</div>
+        </div>
+        <div class="equation_symbol">$$+$$</div>
+        <div class="equation_section">
+          <div class="value kd_value kd_color light_text"></div>
+          <div class="equation_symbol">$$*$$</div>
+          <div class="value div div_color light_text">343.34</div>
         </div>
       </div>
     </div>
+    
 
-    <div class="equation">
-
-      <div class="equation_section">
-        <div class="value kp_value kp_color"></div>
-        <div class="equation_symbol">*</div>
-        <div class="value error error_color">23.42</div>
-      </div>
-      <div class="equation_symbol">+</div>
-      <div class="equation_section">
-        <div class="value ki_value ki_color"></div>
-        <div class="equation_symbol">*</div>
-        <div class="value error">23.43</div>
-      </div>
-      <div class="equation_symbol">+</div>
-      <div class="equation_section">
-        <div class="value kd_value kd_color"></div>
-        <div class="equation_symbol">*</div>
-        <div class="value error">343.34</div>
-      </div>
-    </div>
-
-    <div class="master_equation">
-      $$
-      \require{color}
-      \definecolor{kp_color}{RGB}{55, 9, 38}
-      \definecolor{ki_color}{RGB}{52, 89, 149}
-      \definecolor{kd_color}{RGB}{228, 0, 102}
-      \definecolor{error_color}{RGB}{251, 77, 61}
-
-      u(t) = \textcolor{kp_color}{K_p}\textcolor{error_color}{e(t)}+\textcolor{ki_color}{K_i}\int_0^t\textcolor{error_color}{e(t)}dt +\textcolor{kd_color}{K_d}\frac{de}{dt}
-
-      $$
-    </div>
+    
     
 
     

@@ -132,6 +132,9 @@ body{
 }
 
 .value{
+    display:flex;
+    justify-content: center;
+    width:12rem;
     padding:1rem;
 }
 

@@ -19,8 +19,6 @@ This finaly brings us back to today, right now. The reason your hopefully readin
 * [![MatterJS][Matter.js]][Matter-url]
 * [![MathJax][MathJax.js]][Mathjax-url]
 
-</br>
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -32,7 +30,6 @@ git clone https://bitbucket.org/thatoneguyEvan/cartpole_simulation.git
 2. Download a zip by visiting the [repo downloads](https://bitbucket.org/thatoneguyEvan/cartpole_simulation/downloads/) and clicking on "Download repositiory" item. Unzip the contents to a folder of your choosing.
 
 
-</br>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -41,8 +38,6 @@ git clone https://bitbucket.org/thatoneguyEvan/cartpole_simulation.git
 2. open index.html
 3. Mess around.
 
-
-</br>
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -54,8 +49,6 @@ git clone https://bitbucket.org/thatoneguyEvan/cartpole_simulation.git
 
 See the [jira issues](https://bitbucket.org/thatoneguyEvan/cartpole_simulation/jira) for a full list of proposed features (and known issues).
 
-
-</br>
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -71,15 +64,12 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-</br>
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-
-</br>
 
 <!-- CONTACT -->
 ## Contact
@@ -88,8 +78,6 @@ Evan Sopchak - evan@evansopchak.org
 
 Project Link: [https://bitbucket.org/thatoneguyEvan/cartpole_simulation](https://bitbucket.org/thatoneguyEvan/cartpole_simulation)
 
-
-</br>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments

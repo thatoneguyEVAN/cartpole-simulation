@@ -5,7 +5,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This all started after a very long night in which I stayed up way to late watching the coding train. I was scrolling through YouTube and saw that Dan from [The Coding Train](https://www.youtube.com/c/TheCodingTrain) uploaded a video called [Robot Controllers Part 1: PID (with Dr. Christian Hubicki)](https://www.youtube.com/watch?v=fWQWX9-8_sA). I said to myself "Now didn't you want to learn something about PID controllers." I did in fact want to do that.
+I was scrolling through YouTube and saw that Dan from [The Coding Train](https://www.youtube.com/c/TheCodingTrain) uploaded a video called [Robot Controllers Part 1: PID (with Dr. Christian Hubicki)](https://www.youtube.com/watch?v=fWQWX9-8_sA). I said to myself "Now didn't you want to learn something about PID controllers." I did in fact want to do that.
 
 Why would I want to learn this. First it's just really neat math at its core. After wrting this I have a much better understanding of how these types of systems work. Second...
 

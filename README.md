@@ -5,13 +5,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This all started after a very long night in which I stayed up way to late watching coding train. I was scrolling through youtube and saw that Dan from the Coding Train uploaded a video called [Robot Controllers Part 1: PID (with Dr. Christian Hubicki)](https://www.youtube.com/watch?v=fWQWX9-8_sA). I said to myself "Now didn't you want to learn something about PID controllers." I did in fact want to do that. There was also really no need to ask that question to myself. 
+This all started after a very long night in which I stayed up way to late watching the coding train. I was scrolling through YouTube and saw that Dan from [The Coding Train](https://www.youtube.com/c/TheCodingTrain) uploaded a video called [Robot Controllers Part 1: PID (with Dr. Christian Hubicki)](https://www.youtube.com/watch?v=fWQWX9-8_sA). I said to myself "Now didn't you want to learn something about PID controllers." I did in fact want to do that.
 
 Why would I want to learn this. First it's just really neat math at its core. After wrting this I have a much better understanding of how these types of systems work. Second...
 
-I love space. I really love space. So much so I love to play games involving space. One of those games is the absolutly legendary [Kerbal Space Program](https://www.kerbalspaceprogram.com). What made this game so legendary was ones ability to through trial and error to understand the physics concepts that govern the world around us. Also mods, specifilay a mod called [kOS](https://ksp-kos.github.io/KOS/). This mod gave us the ability to write scripts and have a computer on our ship run them. This opened up alot of possibiltites to control and automate flight to space. However there was one problem. How do you tell the rocket which heading to hold, or how much thurst to use to hover. The documention of kOS was pretty clear though. There was only one thing to do. Learn how PID control systems work.
+I love space. I really love space. So much so I love to play games involving space. One of those games is the absolutly legendary [Kerbal Space Program](https://www.kerbalspaceprogram.com). What made this game so legendary was ones ability, through trial and error, to understand the physics concepts that govern the world around us. Also mods, specifilay a mod called [kOS](https://ksp-kos.github.io/KOS/). This mod gave us the ability to write scripts and have a computer on our ship run them. This opened up alot of possibiltites to control and automate flight to space. However there was one problem. How do you tell the rocket which heading to hold, or how much thurst to use to hover. The documention of kOS was pretty clear though. There was only one thing to do. Learn how PID control systems work.
 
-This finaly brings us back to today, right now. The reason your hopefully reading this. I watched that whole 3ish hour stream., and I made my own version! Please feel free to look though the code, tear it to shreads, refactor. Have fun.
+This finaly brings us back to today, right now. The reason your hopefully reading this. I watched that whole ~3 hour stream video thing, and I made my own version! Please feel free to look though the code, tear it to shreads, refactor. Have fun.
 
 
 ### Built With

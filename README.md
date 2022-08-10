@@ -93,6 +93,6 @@ Project Link: [https://bitbucket.org/thatoneguyEvan/cartpole_simulation](https:/
 
 [Matter.js]: https://img.shields.io/badge/Matter.js-0.18.0-green
 [MathJax.js]: https://img.shields.io/badge/Mathjax-3.2-green
-[Matter-url]: https://nextjs.org/
-[Mathjax-url]: https://reactjs.org/
+[Matter-url]: https://brm.io/matter-js/
+[Mathjax-url]: https://www.mathjax.org
 [product-screenshot]: https://i.ibb.co/2M4FHXQ/App-Screenshot.png

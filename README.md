@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-# Cartpole Simulation
+# Cartpole Simulation • [![License][License]][License] [![Commits][Commits]][Commits] [![Issues][Issues]][Issues] [![Lastcommit][Lastcommit]][Lastcommit]
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -19,35 +19,31 @@ This finaly brings us back to today, right now. The reason your hopefully readin
 * [![MatterJS][Matter.js]][Matter-url]
 * [![MathJax][MathJax.js]][Mathjax-url]
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-Pretty easy to get going, there are several ways to get the code up and running.
-1. Clone the repo
-```sh 
-git clone https://bitbucket.org/thatoneguyEvan/cartpole_simulation.git
-```
-2. Download a zip by visiting the [repo downloads](https://bitbucket.org/thatoneguyEvan/cartpole_simulation/downloads/) and clicking on "Download repositiory" item. Unzip the contents to a folder of your choosing.
-
-
-
 <!-- USAGE EXAMPLES -->
-## Usage
+## Install
 
-1. Navigate to the folder you put the files into.
-2. open index.html
-3. Mess around.
+1. Clone or download the repo into a folder of your choosing.
+    * `git clone https://github.com/thatoneguyEVAN/cartpole-simulation`
+    * Download a zip of the repo from [the repo](https://github.com/thatoneguyEVAN/cartpole-simulation)
+2. Navigate to the folder you just extracted or cloned into, and open index.html
+
+## Controls
+
+* Left Arrow - Applied a tiny force in the left facing direction to the weight atop the pole.
+* Right Arrow - Applied a tiny force in the right facing direction to the weight atop the pole.
+* The Sliders - Alow you to in real time control the gains of the PID loop.
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Add some sides to contain the simulation
-- [ ] Add some movement features.
-    - [ ] seek target
-    - [ ] hold target
+- Add some sides to contain the simulation.
+- Make it a full screen simulation.
+- Add some movement features.
+    - Seek a target
+    - Hold a target
 
-See the [jira issues](https://bitbucket.org/thatoneguyEvan/cartpole_simulation/jira) for a full list of proposed features (and known issues).
+See the [issues](https://github.com/thatoneguyEVAN/cartpole-simulation/issues) for a full list of known issues.
 
 
 <!-- CONTRIBUTING -->
@@ -76,7 +72,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Evan Sopchak - evan@evansopchak.org
 
-Project Link: [https://bitbucket.org/thatoneguyEvan/cartpole_simulation](https://bitbucket.org/thatoneguyEvan/cartpole_simulation)
+Project Link: [https://github.com/thatoneguyEVAN/cartpole-simulation/](https://github.com/thatoneguyEVAN/cartpole-simulation/)
 
 
 <!-- ACKNOWLEDGMENTS -->
@@ -91,8 +87,12 @@ Project Link: [https://bitbucket.org/thatoneguyEvan/cartpole_simulation](https:/
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[Matter.js]: https://img.shields.io/badge/Matter.js-0.18.0-green
-[MathJax.js]: https://img.shields.io/badge/Mathjax-3.2-green
+[Lastcommit]: https://badgen.net/github/last-commit/thatoneguyEvan/cartpole-simulation
+[Issues]: https://badgen.net/github/issues/thatoneguyEvan/cartpole-simulation
+[Commits]: https://badgen.net/github/commits/thatoneguyEVAN/cartpole-simulation
+[License]: https://badgen.net/github/license/thatoneguyEvan/cartpole-simulation
+[Matter.js]: https://badgen.net/badge/Matter.js/0.18.0/green
+[MathJax.js]: https://badgen.net/badge/Mathjax/3.2/green
 [Matter-url]: https://brm.io/matter-js/
 [Mathjax-url]: https://www.mathjax.org
 [product-screenshot]: https://i.ibb.co/2M4FHXQ/App-Screenshot.png

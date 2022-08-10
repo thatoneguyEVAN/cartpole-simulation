@@ -12,7 +12,7 @@ let Engine          = Matter.Engine,
     Vector          = Matter.Vector,
     Events          = Matter.Events;
 
-const WIDTH = 800;
+const WIDTH = 1200;
 const HEIGHT = 600
 const GROUND = 0;
 const CART = 1;

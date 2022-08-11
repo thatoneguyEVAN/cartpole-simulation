@@ -17,6 +17,8 @@ const HEIGHT = 600
 const GROUND = 0;
 const CART = 1;
 const CARTBOB = 2;
+const RIGHTWALL = 3;
+const LEFTWALL = 4;
 
 let engine,
     world,
@@ -30,6 +32,13 @@ let groundWidth = WIDTH;
 let groundHeight = 50;
 let groundX = WIDTH / 2;
 let groundY = HEIGHT - groundHeight / 2
+
+// wall info
+let wallWidth = 20;
+let wallHeight = HEIGHT;
+let leftWallX = wallWidth / 2;
+let rightWallX = WIDTH - wallWidth / 2;
+let wallY = HEIGHT / 2
 
 // cart info
 let cartWidth = 100;
@@ -101,6 +110,20 @@ let setUpMatterJs = () => {
         }
     });
 
+    bodies[RIGHTWALL] = Bodies.rectangle(rightWallX,wallY,wallWidth,wallHeight,{
+        isStatic: true,
+        render:{
+            fillStyle: "#CCCCCC"
+        }
+    });
+
+    bodies[LEFTWALL] = Bodies.rectangle(leftWallX,wallY,wallWidth,wallHeight,{
+        isStatic: true,
+        render:{
+            fillStyle: "#CCCCCC"
+        }
+    });
+
     bodies[CART] = Bodies.rectangle(cartX,cartY,cartWidth,cartHeight,{
         render:{
             fillStyle: "#AAAAAA",
@@ -126,7 +149,7 @@ let setUpMatterJs = () => {
 
     });
 
-    Composite.add(world, [bodies[GROUND], bodies[CART], bodies[CARTBOB], c ]);
+    Composite.add(world, [bodies[GROUND], bodies[CART], bodies[CARTBOB], bodies[LEFTWALL], bodies[RIGHTWALL], c ]);
 
     // run renderer
     Render.run(render);

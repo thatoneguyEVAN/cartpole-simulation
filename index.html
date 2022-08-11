@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" type="text/css" href="assets/reset.css"> <!--CSS Reset-->
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    
+
+  </head>
+  <body>
+    
+    <div class="header">
+      <div id="title">Matter.js Cartpole Simulation</div>
+      <div id="subtitle">Using a PID control loop</div>
+    </div>
+    
+    <div id="simulation"></div>
+    <div class="equations">
+      <div id="simulation_controls">
+
+        <div class="slider_container kp_color light_text">
+          Proportional (Kp)
+          <div class="slider_group">
+            <input type="range" min="0" max="0.1" value=".05" step=".001" lass="slider" id="kp_slider" class="form-range">
+          </div>
+        </div>
+        <div class="slider_container ki_color light_text">
+          Integral (Ki)
+          <div class="slider_group">
+            <input type="range" min="0" max="0.1" value=".001" step=".001" lass="slider" id="ki_slider" class="form-range">
+          </div>
+        </div>
+        <div class="slider_container kd_color light_text">
+          Derivative (Kd)
+          <div class="slider_group">
+            <input type="range" min="0" max="0.1" value=".01" step=".001" lass="slider" id="kd_slider" class="form-range">
+          </div>
+        </div>
+        <div class="slider_container dt_color light_text">
+          Time Step (dt)
+          <div class="slider_group">
+            <input type="range" min="0" max="0.5" value="0.05" step="0.01" lass="slider" id="dt_slider" class="form-range">
+          </div>
+        </div>
+      </div>
+
+      <div class="master equation">
+        $$
+        \require{color}
+        \definecolor{kp_color}{RGB}{200, 0, 0}
+        \definecolor{ki_color}{RGB}{0, 180,0}
+        \definecolor{kd_color}{RGB}{0, 0, 200}
+        \definecolor{int_color}{RGB}{8, 181, 200}
+        \definecolor{div_color}{RGB}{200, 22, 194}
+        \definecolor{dt_color}{RGB}{233, 152, 22}
+        \definecolor{error_color}{RGB}{132, 0, 255}
+        
+        u(t) = 
+        
+        \textcolor{kp_color}{K_p}
+        \textcolor{error_color}{e}+
+        \textcolor{ki_color}{K_i}
+        \textcolor{int_color}{\int_0^te(t)}
+        \textcolor{dt_color}{dt}
+  
+        +
+  
+        \textcolor{kd_color}{K_d}
+        \textcolor{div_color}{\frac{de}{dt}}
+        
+  
+        $$
+      </div>
+      <div class="equation">
+        <div class="equation_section">
+          <div id="kp_value" class="value kp_value kp_color light_text"></div>
+          <div class="equation_symbol">$$*$$</div>
+          <div id="error_value" class="value error_color light_text">23.42</div>
+        </div>
+        <div class="equation_symbol">$$+$$</div>
+        <div class="equation_section">
+          <div id="ki_value" class="value ki_value ki_color light_text"></div>
+          <div class="equation_symbol">$$*$$</div>
+          <div id="int_error_value" class="value int int_color light_text">23.43</div>
+        </div>
+        <div class="equation_symbol">$$+$$</div>
+        <div class="equation_section">
+          <div id="kd_value" class="value kd_value kd_color light_text"></div>
+          <div class="equation_symbol">$$*$$</div>
+          <div id="de_dt_value"class="value div div_color light_text">343.34</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/matter.js"></script> <!-- Matter.js -->
+    <script src="controls.js"></script> <!-- Simulation-->
+    <script src="simulation.js"></script> <!-- Simulation-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script id="MathJax-script" async src="assets/MathJax/latest.js"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+:root{
+    --kp_color: rgb(200, 0, 0);
+    --ki_color: rgb(0, 180, 0);
+    --kd_color: rgb(0, 0, 200);
+    --int_color: rgb(8, 181, 200);
+    --div_color: rgb(200, 22, 194);
+    --dt_color: rgb(233 152 22);
+    --error_color: rgb(132, 0, 255);
+
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+ /* Header Things */
+.header{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header #title{
+    font-size: 3rem;
+}
+
+.header #subtitle{
+    font-size: 1.5rem;
+}
+
+
+/* sliders */
+#simulation_controls{
+    display:flex;
+}
+
+.slider_container{
+    font-size: 2rem;
+    color: white;
+    border:.1rem solid rgb(189, 189, 189);
+    padding:.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:1rem;
+}
+
+#simulation_controls .slider_container:not(:last-child){
+    margin-right: 1rem;;
+}
+
+.slider_group{
+    display:flex;
+}
+
+.slider_header{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.slider_header .slider_value{
+    margin-left: 2rem;
+}
+
+
+/* equations */
+.light_text{
+    color:white;    
+}
+
+.kp_color{
+    background:var(--kp_color); 
+}
+
+.kp_color_text{
+    color:var(--kp_color);
+}
+
+.ki_color{
+    background:var(--ki_color);
+}
+
+.kd_color{
+    background:var(--kd_color);
+}
+
+.error_color{
+    background: var(--error_color);
+}
+
+.dt_color{
+    background: var(--dt_color);   
+}
+
+.int_color{
+    background: var(--int_color);  
+}
+
+.div_color{
+    background: var(--div_color);  
+}
+
+.equations{
+    font-size: 2rem;
+    background:#d8d8d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:1rem;
+}
+
+.equation{
+    margin:1rem 0 1rem 0;
+    padding:1rem;
+    display:flex;
+    
+}
+
+.equation_section{
+    display:flex;
+    align-items: center;
+}
+
+.value{
+    display:flex;
+    justify-content: center;
+    width:12rem;
+    padding:1rem;
+}
+
+.master_equation{
+    font-size:2rem;
+}
+
+.equation_symbol{
+    margin:0 .5rem 0 .5rem;
+}

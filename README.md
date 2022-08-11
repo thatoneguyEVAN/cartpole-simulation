@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-# Cartpole Simulation • [![License][License]][License] [![Commits][Commits]][Commits] [![Issues][Issues]][Issues] [![Lastcommit][Lastcommit]][Lastcommit]
+# Cartpole Simulation • [![Release][Release]][Release] [![Lastcommit][Lastcommit]][Lastcommit] [![IssuesOpen][IssuesOpen]][IssuesOpen] [![IssuesClosed][IssuesClosed]][IssuesClosed] [![License][License]][License]
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -81,18 +81,15 @@ Project Link: [https://github.com/thatoneguyEVAN/cartpole-simulation/](https://g
 * [The Coding Train](https://www.youtube.com/c/TheCodingTrain)
 * [Dr. Christian Hubicki](https://twitter.com/chubicki)
 
+<!-- Sheilds.io live badges -->
+[Release]: https://shields.io/github/v/release/thatoneguyEvan/cartpole-simulation?display_name=tag
+[LastCommit]: https://shields.io/github/last-commit/thatoneguyEvan/cartpole-simulation
+[IssuesOpen]: https://shields.io/github/issues/thatoneguyEvan/cartpole-simulation
+[IssuesClosed]: https://shields.io/github/issues-closed/thatoneguyEvan/cartpole-simulation
+[License]: https://shields.io/github/license/thatoneguyEvan/cartpole-simulation
+[Matter.js]: https://img.shields.io/badge/Matter.js-0.18.0-blue
+[MathJax.js]: https://img.shields.io/badge/Mathjax-3.2.0-blue
 
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-[Lastcommit]: https://badgen.net/github/last-commit/thatoneguyEvan/cartpole-simulation
-[Issues]: https://badgen.net/github/issues/thatoneguyEvan/cartpole-simulation
-[Commits]: https://badgen.net/github/commits/thatoneguyEVAN/cartpole-simulation
-[License]: https://badgen.net/github/license/thatoneguyEvan/cartpole-simulation
-[Matter.js]: https://badgen.net/badge/Matter.js/0.18.0/green
-[MathJax.js]: https://badgen.net/badge/Mathjax/3.2/green
+<!-- Project links-->
 [Matter-url]: https://brm.io/matter-js/
 [Mathjax-url]: https://www.mathjax.org
-[product-screenshot]: https://i.ibb.co/2M4FHXQ/App-Screenshot.png

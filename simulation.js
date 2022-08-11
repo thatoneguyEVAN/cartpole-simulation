@@ -19,6 +19,7 @@ const CART = 1;
 const CARTBOB = 2;
 const RIGHTWALL = 3;
 const LEFTWALL = 4;
+const CELING = 5;
 
 let engine,
     world,
@@ -32,6 +33,12 @@ let groundWidth = WIDTH;
 let groundHeight = 50;
 let groundX = WIDTH / 2;
 let groundY = HEIGHT - groundHeight / 2
+
+// celing info
+let celingHeight = 20;
+let celingWidth = WIDTH;
+let celingX = WIDTH / 2;
+let celingY = celingHeight / 2;
 
 // wall info
 let wallWidth = 20;
@@ -110,6 +117,13 @@ let setUpMatterJs = () => {
         }
     });
 
+    bodies[CELING] = Bodies.rectangle(celingX,celingY,celingWidth,celingHeight,{
+        isStatic: true,
+        render:{
+            fillStyle: "#CCCCCC"
+        }
+    });
+
     bodies[RIGHTWALL] = Bodies.rectangle(rightWallX,wallY,wallWidth,wallHeight,{
         isStatic: true,
         render:{
@@ -149,7 +163,7 @@ let setUpMatterJs = () => {
 
     });
 
-    Composite.add(world, [bodies[GROUND], bodies[CART], bodies[CARTBOB], bodies[LEFTWALL], bodies[RIGHTWALL], c ]);
+    Composite.add(world, [bodies[GROUND], bodies[CART], bodies[CARTBOB], bodies[LEFTWALL], bodies[RIGHTWALL], bodies[CELING], c ]);
 
     // run renderer
     Render.run(render);
